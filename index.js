@@ -30,7 +30,7 @@ For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you ma
 
 function summation(value) {
   var result = 0;
-  for (i = 0; i < value; i++) {
+  for (var i = 0; i < value; i++) {
     result = result + i;
   }
 
