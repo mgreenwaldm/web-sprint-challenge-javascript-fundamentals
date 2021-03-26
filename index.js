@@ -126,6 +126,7 @@ For example: ['jackal, asiatic', .....]
 */
 
 function lowerCaseNames(input) {
+  return input.map(animal => animal.animal_name.toLowerCase());
 
 }
 
