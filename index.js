@@ -179,9 +179,12 @@ consume(3, 4, add);
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
 
-function multiply( /*Your Code Here */ ) {
-  /*Your Code Here */
+function multiply(a, b) {
+  return a * b;
 }
+
+consume(3, 4, multiply);
+
 
 // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
 
