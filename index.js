@@ -109,8 +109,11 @@ Use animalNames to populate and return the displayNames array with only the anim
 displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
 */
 
-function animalNames(animal_name, scientific_name) {
-
+function animalNames(zooAnimals) {
+  animalNames.forEach(function (zooAnimals) {
+    return (zooAnimals.animal_name);
+    return (zooAnimals.scientific_name);
+  });
 }
 
 
@@ -120,7 +123,8 @@ Using lowerCaseNames use .map() to create a new array of strings with the animal
 For example: ['jackal, asiatic', .....]
 */
 
-function lowerCaseNames( /*Your Code Here*/ ) {
+function lowerCaseNames(zooAnimals) {
+  animalNames.map()
   /*Your Code Here*/
 }
 
