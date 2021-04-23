@@ -32,9 +32,11 @@ For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you ma
 
 function summation(number) {
   let counter = 0;
-  for (let i = 0; i < number; i++);
-  return (summation(4, 4, 5));
+  for (let i = 0; i <= number; i++) {
+    counter += i;
+  }
 
+  return counter;
 }
 
 
@@ -109,13 +111,9 @@ Use animalNames to populate and return the displayNames array with only the anim
 displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
 */
 
-function animalNames(zooAnimals) {
-  animalNames.forEach(function (zooAnimals) {
-    return (zooAnimals.animal_name);
-    return (zooAnimals.scientific_name);
-  });
+function animalNames(animals) {
+  return animals.map(v => `name: ${v.animal_name}, scientific: ${v.scientific_name}`);
 }
-
 
 /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
 The zoo needs a list of all their animal's names converted to lower case. 
@@ -124,8 +122,7 @@ For example: ['jackal, asiatic', .....]
 */
 
 function lowerCaseNames(zooAnimals) {
-  animalNames.map()
-  /*Your Code Here*/
+  const newArray = array.map(zooAnimals => zooAnimals.key.toLowerCase());
 }
 
 
@@ -134,8 +131,8 @@ The zoo is concerned about animals with a lower population count.
 Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
 */
 
-function lowPopulationAnimals( /*Your Code Here*/ ) {
-  /*Your Code Here*/
+function lowPopulationAnimals(zooAnimals) {
+  const newArray = array.map(zooAnimals => zooAnimals.key.toLowerCase());
 }
 
 
@@ -145,8 +142,10 @@ Using USApop find the total population from the zoos array using the .reduce() m
 Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
 */
 
-function USApop( /*Your Code Here*/ ) {
-  /*Your Code Here*/
+function USApop(zooAnimals) {
+  const singleValue = array.reduce((accumulator, zooAnimals) => {
+    return accumulator + zooAnimals
+  }, 0);
 }
 
 
