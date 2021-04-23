@@ -121,8 +121,8 @@ Using lowerCaseNames use .map() to create a new array of strings with the animal
 For example: ['jackal, asiatic', .....]
 */
 
-function lowerCaseNames(zooAnimals) {
-  const newArray = array.map(zooAnimals => zooAnimals.key.toLowerCase());
+function lowerCaseNames(animals) {
+  return animals.map(v => v.animal_name.toLowerCase());
 }
 
 
