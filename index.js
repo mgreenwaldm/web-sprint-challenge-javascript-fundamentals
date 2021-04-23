@@ -131,8 +131,8 @@ The zoo is concerned about animals with a lower population count.
 Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
 */
 
-function lowPopulationAnimals(zooAnimals) {
-  const newArray = array.map(zooAnimals => zooAnimals.key.toLowerCase());
+function lowPopulationAnimals(animals) {
+  return animals.filter(v => v.population < 5)
 }
 
 
